@@ -1,0 +1,98 @@
+<!--creation du commantaire---------------------------------------->
+<!-- ctrl + "/"-->
+
+
+<!--Creation d'elements HTML---------------------------------------->
+<!--"!"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- Classes et IDs------------------------------------------------>
+<!--pour class ------------------------>
+.title
+<div class="title"></div>
+
+<!--pour plusieur class ------------------------>
+p.class1.class2.class3
+<p class="class1 class2 class3"></p>
+
+<!--pour id ------------------------>
+#header
+<div id="header"></div>
+
+<!--pour class + id ------------------------>
+div#search.wide
+<div id="search" class="wide"></div>
+
+<!--Enfants et descendan------------------------------------------->
+div>ul>li
+<div>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+
+div>ul^p
+<div>
+    <ul></ul>
+</div>
+<p></p>
+
+<!--Repetition d'elements------------------------------------------>
+ul>li*5
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+ul>li.item$*5
+<ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+</ul>
+
+<!--Groupement d'elements------------------------------------------>
+section>(header>div>ul>li*5)
+<section>
+    <header>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </header>
+</section>
+
+
+<!--Attributs------------------------------------------------------>
+a[href"ww.google.com" target="_blank" title=""]
+
+
+
+<!--Texte de contenu----------------------------------------------->
+a{Click me}
+<a href="">Click me</a>
+
+p>{Click }+a{here}+{ to continue}
+<p>Click <a href="">here</a> to continue</p>
+
+
+
